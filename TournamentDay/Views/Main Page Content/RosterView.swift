@@ -74,13 +74,15 @@ struct RosterView: View {
     }
     
     func addPlayer() {
-        let newPlayer = Player(context: context)
-        newPlayer.id = UUID()
-        newPlayer.name = playerName
-        do {
-            try context.save()
-        } catch {
-            print(error)
+        if (playerName.count > 0) {
+            let newPlayer = Player(context: context)
+            newPlayer.id = UUID()
+            newPlayer.name = playerName
+            do {
+                try context.save()
+            } catch {
+                print(error)
+            }
         }
     }
 }
