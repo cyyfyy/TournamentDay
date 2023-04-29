@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Game" representedClassName="Game" syncable="YES" codeGenerationType="class">
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="location" attributeType="String"/>
+        <attribute name="teamOneName" attributeType="String"/>
+        <attribute name="teamTwoName" attributeType="String"/>
+        <relationship name="players" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="game" inverseEntity="Player"/>
+        <relationship name="points" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Point" inverseName="game" inverseEntity="Point"/>
+    </entity>
+    <entity name="Player" representedClassName="Player" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="game" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="players" inverseEntity="Game"/>
+        <relationship name="stats" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Stat" inverseName="player" inverseEntity="Stat"/>
+    </entity>
+    <entity name="Point" representedClassName="Point" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="number" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="game" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="points" inverseEntity="Game"/>
+        <relationship name="stats" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Stat" inverseName="point" inverseEntity="Stat"/>
+    </entity>
+    <entity name="Stat" representedClassName="Stat" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="playerId" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="playerTwoId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="type" attributeType="String"/>
+        <relationship name="player" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="stats" inverseEntity="Player"/>
+        <relationship name="player2" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player"/>
+        <relationship name="point" maxCount="1" deletionRule="Nullify" destinationEntity="Point" inverseName="stats" inverseEntity="Point"/>
+    </entity>
+</model>

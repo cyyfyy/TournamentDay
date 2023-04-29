@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C92A60B29F8552B00CCCB3E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92A60A29F8552B00CCCB3E /* RootView.swift */; };
+		4C92A60D29F8554900CCCB3E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92A60C29F8554900CCCB3E /* TabBar.swift */; };
+		4C92A60F29F8557D00CCCB3E /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92A60E29F8557D00CCCB3E /* TabBarButton.swift */; };
+		4C92A61829F87ACD00CCCB3E /* CreateGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92A61729F87ACD00CCCB3E /* CreateGameView.swift */; };
+		4C9ECCF129F854030003E7CD /* TournamentDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9ECCF029F854030003E7CD /* TournamentDayApp.swift */; };
+		4C9ECCF329F854030003E7CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9ECCF229F854030003E7CD /* ContentView.swift */; };
+		4C9ECCF529F854040003E7CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C9ECCF429F854040003E7CD /* Assets.xcassets */; };
+		4C9ECCF829F854040003E7CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C9ECCF729F854040003E7CD /* Preview Assets.xcassets */; };
+		4C9ECCFA29F854040003E7CD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9ECCF929F854040003E7CD /* Persistence.swift */; };
+		4C9ECCFD29F854040003E7CD /* TournamentDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C9ECCFB29F854040003E7CD /* TournamentDay.xcdatamodeld */; };
+		4CC64A0E29FACDE40093B998 /* LiveGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC64A0D29FACDE40093B998 /* LiveGameView.swift */; };
+		4CC64A1029FACDF70093B998 /* RosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC64A0F29FACDF70093B998 /* RosterView.swift */; };
+		4CC64A1629FACE320093B998 /* RecentGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC64A1529FACE320093B998 /* RecentGamesView.swift */; };
+		4CC64A1829FACE410093B998 /* TeamStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC64A1729FACE410093B998 /* TeamStatsView.swift */; };
+		4CC64A1B29FAD1440093B998 /* MainPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC64A1A29FAD1440093B998 /* MainPageContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C92A60A29F8552B00CCCB3E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		4C92A60C29F8554900CCCB3E /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		4C92A60E29F8557D00CCCB3E /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
+		4C92A61729F87ACD00CCCB3E /* CreateGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameView.swift; sourceTree = "<group>"; };
+		4C9ECCED29F854030003E7CD /* TournamentDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TournamentDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C9ECCF029F854030003E7CD /* TournamentDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentDayApp.swift; sourceTree = "<group>"; };
+		4C9ECCF229F854030003E7CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4C9ECCF429F854040003E7CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C9ECCF729F854040003E7CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C9ECCF929F854040003E7CD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4C9ECCFC29F854040003E7CD /* TournamentDay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TournamentDay.xcdatamodel; sourceTree = "<group>"; };
+		4CC64A0D29FACDE40093B998 /* LiveGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveGameView.swift; sourceTree = "<group>"; };
+		4CC64A0F29FACDF70093B998 /* RosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterView.swift; sourceTree = "<group>"; };
+		4CC64A1529FACE320093B998 /* RecentGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentGamesView.swift; sourceTree = "<group>"; };
+		4CC64A1729FACE410093B998 /* TeamStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamStatsView.swift; sourceTree = "<group>"; };
+		4CC64A1A29FAD1440093B998 /* MainPageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C9ECCEA29F854030003E7CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C260AC129F8549900521BA2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CC64A1929FAD1180093B998 /* Main Page Content */,
+				4C92A60A29F8552B00CCCB3E /* RootView.swift */,
+				4C92A60C29F8554900CCCB3E /* TabBar.swift */,
+				4C92A60E29F8557D00CCCB3E /* TabBarButton.swift */,
+				4C92A61729F87ACD00CCCB3E /* CreateGameView.swift */,
+				4CC64A0D29FACDE40093B998 /* LiveGameView.swift */,
+				4CC64A1A29FAD1440093B998 /* MainPageContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4C9ECCE429F854030003E7CD = {
+			isa = PBXGroup;
+			children = (
+				4C9ECCEF29F854030003E7CD /* TournamentDay */,
+				4C9ECCEE29F854030003E7CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C9ECCEE29F854030003E7CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C9ECCED29F854030003E7CD /* TournamentDay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C9ECCEF29F854030003E7CD /* TournamentDay */ = {
+			isa = PBXGroup;
+			children = (
+				4C260AC129F8549900521BA2 /* Views */,
+				4C9ECCF029F854030003E7CD /* TournamentDayApp.swift */,
+				4C9ECCF229F854030003E7CD /* ContentView.swift */,
+				4C9ECCF429F854040003E7CD /* Assets.xcassets */,
+				4C9ECCF929F854040003E7CD /* Persistence.swift */,
+				4C9ECCFB29F854040003E7CD /* TournamentDay.xcdatamodeld */,
+				4C9ECCF629F854040003E7CD /* Preview Content */,
+			);
+			path = TournamentDay;
+			sourceTree = "<group>";
+		};
+		4C9ECCF629F854040003E7CD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4C9ECCF729F854040003E7CD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4CC64A1929FAD1180093B998 /* Main Page Content */ = {
+			isa = PBXGroup;
+			children = (
+				4CC64A1529FACE320093B998 /* RecentGamesView.swift */,
+				4CC64A1729FACE410093B998 /* TeamStatsView.swift */,
+				4CC64A0F29FACDF70093B998 /* RosterView.swift */,
+			);
+			path = "Main Page Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C9ECCEC29F854030003E7CD /* TournamentDay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C9ECD0029F854040003E7CD /* Build configuration list for PBXNativeTarget "TournamentDay" */;
+			buildPhases = (
+				4C9ECCE929F854030003E7CD /* Sources */,
+				4C9ECCEA29F854030003E7CD /* Frameworks */,
+				4C9ECCEB29F854030003E7CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TournamentDay;
+			productName = TournamentDay;
+			productReference = 4C9ECCED29F854030003E7CD /* TournamentDay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C9ECCE529F854030003E7CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4C9ECCEC29F854030003E7CD = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 4C9ECCE829F854030003E7CD /* Build configuration list for PBXProject "TournamentDay" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C9ECCE429F854030003E7CD;
+			productRefGroup = 4C9ECCEE29F854030003E7CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C9ECCEC29F854030003E7CD /* TournamentDay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C9ECCEB29F854030003E7CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C9ECCF829F854040003E7CD /* Preview Assets.xcassets in Resources */,
+				4C9ECCF529F854040003E7CD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C9ECCE929F854030003E7CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC64A1629FACE320093B998 /* RecentGamesView.swift in Sources */,
+				4C9ECCFA29F854040003E7CD /* Persistence.swift in Sources */,
+				4CC64A0E29FACDE40093B998 /* LiveGameView.swift in Sources */,
+				4CC64A1829FACE410093B998 /* TeamStatsView.swift in Sources */,
+				4C9ECCFD29F854040003E7CD /* TournamentDay.xcdatamodeld in Sources */,
+				4C9ECCF329F854030003E7CD /* ContentView.swift in Sources */,
+				4C92A60D29F8554900CCCB3E /* TabBar.swift in Sources */,
+				4CC64A1B29FAD1440093B998 /* MainPageContentView.swift in Sources */,
+				4C92A61829F87ACD00CCCB3E /* CreateGameView.swift in Sources */,
+				4C92A60F29F8557D00CCCB3E /* TabBarButton.swift in Sources */,
+				4CC64A1029FACDF70093B998 /* RosterView.swift in Sources */,
+				4C9ECCF129F854030003E7CD /* TournamentDayApp.swift in Sources */,
+				4C92A60B29F8552B00CCCB3E /* RootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4C9ECCFE29F854040003E7CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C9ECCFF29F854040003E7CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C9ECD0129F854040003E7CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TournamentDay/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrc.TournamentDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C9ECD0229F854040003E7CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TournamentDay/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrc.TournamentDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C9ECCE829F854030003E7CD /* Build configuration list for PBXProject "TournamentDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C9ECCFE29F854040003E7CD /* Debug */,
+				4C9ECCFF29F854040003E7CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C9ECD0029F854040003E7CD /* Build configuration list for PBXNativeTarget "TournamentDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C9ECD0129F854040003E7CD /* Debug */,
+				4C9ECD0229F854040003E7CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4C9ECCFB29F854040003E7CD /* TournamentDay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4C9ECCFC29F854040003E7CD /* TournamentDay.xcdatamodel */,
+			);
+			currentVersion = 4C9ECCFC29F854040003E7CD /* TournamentDay.xcdatamodel */;
+			path = TournamentDay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4C9ECCE529F854030003E7CD /* Project object */;
+}
