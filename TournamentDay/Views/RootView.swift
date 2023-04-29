@@ -49,12 +49,4 @@ struct RootView_Previews: PreviewProvider {
     }
 }
 
-//                        NavigationLink {
-//                            CreateGameView(path: $path).navigationBarTitle("Create Game")
-//                        } label: {
-//                            Text("Create Game").frame(maxWidth:.infinity).frame(height: 32)
-//                        }.buttonStyle(.borderedProminent).fontWeight(.semibold)
-
-
-
 // Stats: score (thrower, receiver), Ds, turns
