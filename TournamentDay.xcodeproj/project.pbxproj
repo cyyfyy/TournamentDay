@@ -57,15 +57,23 @@
 		4C260AC129F8549900521BA2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4C2D2B6529FD77290030048D /* ComponentViews */,
 				4CC64A1929FAD1180093B998 /* Main Page Content */,
 				4C92A60A29F8552B00CCCB3E /* RootView.swift */,
-				4C92A60C29F8554900CCCB3E /* TabBar.swift */,
-				4C92A60E29F8557D00CCCB3E /* TabBarButton.swift */,
 				4C92A61729F87ACD00CCCB3E /* CreateGameView.swift */,
 				4CC64A0D29FACDE40093B998 /* LiveGameView.swift */,
-				4CC64A1A29FAD1440093B998 /* MainPageContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4C2D2B6529FD77290030048D /* ComponentViews */ = {
+			isa = PBXGroup;
+			children = (
+				4C92A60C29F8554900CCCB3E /* TabBar.swift */,
+				4C92A60E29F8557D00CCCB3E /* TabBarButton.swift */,
+				4CC64A1A29FAD1440093B998 /* MainPageContentView.swift */,
+			);
+			path = ComponentViews;
 			sourceTree = "<group>";
 		};
 		4C9ECCE429F854030003E7CD = {
