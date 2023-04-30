@@ -22,6 +22,7 @@
 		4CC64A1629FACE320093B998 /* RecentGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC64A1529FACE320093B998 /* RecentGamesView.swift */; };
 		4CC64A1829FACE410093B998 /* TeamStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC64A1729FACE410093B998 /* TeamStatsView.swift */; };
 		4CC64A1B29FAD1440093B998 /* MainPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC64A1A29FAD1440093B998 /* MainPageContentView.swift */; };
+		6730D33329FEC7D8004DF142 /* Ideation.md in Resources */ = {isa = PBXBuildFile; fileRef = 6730D33229FEC7D8004DF142 /* Ideation.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		4CC64A1529FACE320093B998 /* RecentGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentGamesView.swift; sourceTree = "<group>"; };
 		4CC64A1729FACE410093B998 /* TeamStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamStatsView.swift; sourceTree = "<group>"; };
 		4CC64A1A29FAD1440093B998 /* MainPageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageContentView.swift; sourceTree = "<group>"; };
+		6730D33229FEC7D8004DF142 /* Ideation.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Ideation.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		4C9ECCEF29F854030003E7CD /* TournamentDay */ = {
 			isa = PBXGroup;
 			children = (
+				6730D33229FEC7D8004DF142 /* Ideation.md */,
 				4C260AC129F8549900521BA2 /* Views */,
 				4C9ECCF029F854030003E7CD /* TournamentDayApp.swift */,
 				4C9ECCF229F854030003E7CD /* ContentView.swift */,
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C9ECCF829F854040003E7CD /* Preview Assets.xcassets in Resources */,
+				6730D33329FEC7D8004DF142 /* Ideation.md in Resources */,
 				4C9ECCF529F854040003E7CD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
