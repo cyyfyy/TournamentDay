@@ -9,9 +9,10 @@ import SwiftUI
 
 struct MainPageContentView: View {
     @Binding var selectedTab: Tabs
+    @Binding var liveGameId: String
     var body: some View {
         if selectedTab == .games {
-            RecentGamesView()
+            RecentGamesView(selectedTab: $selectedTab, liveGameId: $liveGameId)
         }
         if selectedTab == .teamStats {
             TeamStatsView()
@@ -19,11 +20,14 @@ struct MainPageContentView: View {
         if selectedTab == .settings {
             RosterView()
         }
+        if selectedTab == .liveGame {
+            LiveGameView(selectedTab: $selectedTab, liveGameBinding: $liveGameId, liveGameId: liveGameId)
+        }
     }
 }
 
 struct MainPageContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MainPageContentView(selectedTab: .constant(.games))
+        MainPageContentView(selectedTab: .constant(.games), liveGameId: .constant(""))
     }
 }

@@ -10,6 +10,7 @@ import SwiftUI
 struct RootView: View {
     
     @State private var selectedTab: Tabs = .games
+    @State private var liveGameId: String = ""
     @State private var path: [String] = []
     var body: some View {
         NavigationStack(path: $path) {
@@ -35,7 +36,7 @@ struct RootView: View {
                             .cornerRadius(10)
                             .aspectRatio(contentMode: .fit)
                     }
-                    MainPageContentView(selectedTab: $selectedTab)
+                    MainPageContentView(selectedTab: $selectedTab, liveGameId: $liveGameId)
                     TabBar(selectedTab: $selectedTab)
                 }
             }

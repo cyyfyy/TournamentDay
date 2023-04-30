@@ -17,27 +17,29 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-//        for _ in 0..<10 {
-//            let newPlayer = Player(context: viewContext)
-//            newPlayer.name = randomString(length: 5)
-//            newPlayer.id = UUID()
-//        }
-//        for _ in 0..<10 {
-//            let newGame = Game(context: viewContext)
-//            newGame.date = Date.now
-//            newGame.id = UUID()
-//            newGame.teamOneName = randomString(length: 5) + "team1"
-//            newGame.teamTwoName = randomString(length: 5) + "team2"
-//            newGame.location = randomString(length: 5) + "location"
-//        }
-//        do {
-//            try viewContext.save()
-//        } catch {
-//            // Replace this implementation with code to handle the error appropriately.
-//            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-//            let nsError = error as NSError
-//            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-//        }
+        for _ in 0..<10 {
+            let newPlayer = Player(context: viewContext)
+            newPlayer.name = randomString(length: 5)
+            newPlayer.id = UUID()
+        }
+        for _ in 0..<10 {
+            let newGame = Game(context: viewContext)
+            newGame.date = Date.now
+            newGame.id = UUID()
+            newGame.teamOneName = randomString(length: 5) + "team1"
+            newGame.teamTwoName = randomString(length: 5) + "team2"
+            newGame.location = randomString(length: 5) + "location"
+            newGame.teamOneScore = 0
+            newGame.teamTwoScore = 0
+        }
+        do {
+            try viewContext.save()
+        } catch {
+            // Replace this implementation with code to handle the error appropriately.
+            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+            let nsError = error as NSError
+            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+        }
         return result
     }()
 

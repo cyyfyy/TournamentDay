@@ -120,9 +120,9 @@
 		4CC64A1929FAD1180093B998 /* Main Page Content */ = {
 			isa = PBXGroup;
 			children = (
+				4CC64A0F29FACDF70093B998 /* RosterView.swift */,
 				4CC64A1529FACE320093B998 /* RecentGamesView.swift */,
 				4CC64A1729FACE410093B998 /* TeamStatsView.swift */,
-				4CC64A0F29FACDF70093B998 /* RosterView.swift */,
 			);
 			path = "Main Page Content";
 			sourceTree = "<group>";

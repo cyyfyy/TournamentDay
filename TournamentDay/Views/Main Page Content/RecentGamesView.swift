@@ -8,26 +8,37 @@
 import SwiftUI
 
 struct GameRow: View {
-    var game: Game
+    @State var game: Game
+    @Binding var liveGameId: String
+    @Binding var selectedTab: Tabs
     var body: some View {
-        HStack {
-            Text(game.teamOneName ?? "")
-            Text("vs")
-            Text(game.teamTwoName ?? "")
-            //        Text(String(game.date))
-        }
+            Button {
+                liveGameId = game.id?.uuidString ?? ""
+                selectedTab = .liveGame
+            } label: {
+                HStack {
+                    Text(game.teamOneName ?? "")
+                    Text("vs")
+                    Text(game.teamTwoName ?? "")
+                }
+            }
+    
     }
 }
 
 struct RecentGamesView: View {
+    @Binding var selectedTab: Tabs
+    @Binding var liveGameId: String
     @FetchRequest var recentGames: FetchedResults<Game>
-    init() {
+    init(selectedTab: Binding<Tabs>, liveGameId: Binding<String>) {
         let request = Game.fetchRequest()
         request.sortDescriptors = [NSSortDescriptor(keyPath: \Game.date, ascending: false)]
         request.fetchLimit = 3;
         _recentGames = FetchRequest(fetchRequest: request)
+        _selectedTab = selectedTab
+        _liveGameId = liveGameId
     }
-
+    
     var body: some View {
         ZStack {
             Color(.black)
@@ -42,7 +53,7 @@ struct RecentGamesView: View {
                     } else {
                         Section {
                             ForEach(recentGames) { game in
-                                GameRow(game: game)
+                                GameRow(game: game, liveGameId: $liveGameId, selectedTab: $selectedTab)
                             }
                         } header: {
                             Text("Recent Games").fontWeight(.bold)
@@ -56,7 +67,7 @@ struct RecentGamesView: View {
 
 struct RecentGamesView_Previews: PreviewProvider {
     static var previews: some View {
-        RecentGamesView()
+        RecentGamesView(selectedTab: .constant(.games), liveGameId: .constant(""))
             .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

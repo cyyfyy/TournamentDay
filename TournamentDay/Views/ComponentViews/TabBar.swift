@@ -11,6 +11,7 @@ enum Tabs: Int {
     case teamStats = 0
     case games = 1
     case settings = 2
+    case liveGame = 3
 }
 
 struct TabBar: View {
